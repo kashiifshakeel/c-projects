@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char ope;
+    float num1,num2;
+    cout<<"Enter the operation:"<<endl;
+    cin>>ope;
+    cin>>num1>>num2;
+    cout<<"First number is:"<<num1<<endl<<"Second number is:"<<num2<<endl;
+    switch(ope)
+    {
+        case '+':
+        cout<<"Addition output:"<<num1<<"+"<<num2<<"="<<num1+num2;
+        break;
+        case '-':
+        cout<<"Subtraction output:"<<num1<<"-"<<num2<<"="<<num1-num2;
+        break;
+        case '*':
+        cout<<"Multiplication output:"<<num1<<"*"<<num2<<"="<<num1*num2;
+        break;
+        case '/':
+        cout<<"Division output:"<<num1<<"/"<<num2<<"="<<num1/num2;
+        break;
+        default:
+        cout<<"Operator is not correct"<<endl;
+        break;
+    }
+    return 0;
+}
